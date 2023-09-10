@@ -29,7 +29,7 @@ async function bootstrap() {
   app.useGlobalFilters(new HttpExceptionFilter());
   app.useGlobalInterceptors(new ResponseInterceptor());
 
-  await app.listen(3000, '127.0.0.1');
+  await app.listen(3000);
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
