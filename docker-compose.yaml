@@ -1,0 +1,7 @@
+
+version: '3'
+services:
+  hub-server:
+    build: .
+    ports:
+      - "3000:3000"
