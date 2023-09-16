@@ -7,6 +7,8 @@ RUN pnpm i
 RUN pnpm run build:h5
 # hub-server build
 FROM node:18.17.0
+ENV HOST 0.0.0.0
+ENV PORT 3000
 EXPOSE 3000
 WORKDIR /app
 RUN npm i -g pnpm && pnpm config set registry https://registry.npm.taobao.org
