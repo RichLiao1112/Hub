@@ -3,10 +3,4 @@ services:
   hub-server:
     build: .
     ports:
-      - "6666:3000"
-    networks:
-      - default
-      
-networks:
-  default:
-    driver: bridge
+      - "3000:3000"

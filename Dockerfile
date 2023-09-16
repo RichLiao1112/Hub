@@ -17,4 +17,4 @@ RUN pnpm i
 COPY ./hub-server ./
 RUN pnpm run build
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["npm", "run", "start:prod"]
