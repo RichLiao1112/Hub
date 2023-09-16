@@ -4,18 +4,16 @@ RUN npm i -g pnpm
 RUN pnpm config set registry https://registry.npm.taobao.org
 
 # hub-frontd build
-COPY ./hub-frontd/package.json ./
-RUN pnpm i
 COPY ./hub-frontd ./
+RUN pnpm i
 RUN pnpm run build:h5
 RUN mkdir ../public && mv ./dist/* ../public/
 RUN rm -rf ./*
 
 # hub-server build
 WORKDIR /app
-COPY ./hub-server/package.json ./
-RUN pnpm i
 COPY ./hub-server ./
+RUN pnpm i
 RUN pnpm run build
 EXPOSE 3000
 CMD ["npm", "run", "start:prod"]
