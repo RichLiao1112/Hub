@@ -1,6 +1,7 @@
 FROM node:18.17.0
 WORKDIR /app/hub-frontd
 RUN npm i -g pnpm
+RUN pnpm config set registry https://registry.npm.taobao.org
 
 # hub-frontd build
 COPY ./hub-frontd/package.json ./
