@@ -1,19 +1,17 @@
-FROM node:18.17.0
-WORKDIR /app/hub-frontd
-RUN npm i -g pnpm
-RUN pnpm config set registry https://registry.npm.taobao.org
-
+FROM node:18.17.0 AS frontdBuilder
+WORKDIR /app
+RUN npm i -g pnpm && pnpm config set registry https://registry.npm.taobao.org
 # hub-frontd build
 COPY ./hub-frontd ./
 RUN pnpm i
 RUN pnpm run build:h5
-RUN mkdir ../public && mv ./dist/* ../public/
-RUN rm -rf ./*
-
 # hub-server build
+FROM node:18.17.0
+EXPOSE 3000
 WORKDIR /app
+RUN npm i -g pnpm && pnpm config set registry https://registry.npm.taobao.org
 COPY ./hub-server ./
 RUN pnpm i
-RUN pnpm run build
-EXPOSE 3000
+RUN mkdir public && pnpm run build
+COPY --from=frontdBuilder /app/dist/* ./public/
 CMD ["npm", "run", "start:prod"]

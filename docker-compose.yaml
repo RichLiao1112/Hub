@@ -1,6 +1,6 @@
 version: '3'
 services:
   hub-server:
-    build: .
+    image: 2458006757/hub-server:v1
     ports:
-      - "3000:3000"
+      - "3133:3000"
