@@ -1,0 +1,192 @@
+.Home {
+  font-size: 24px;
+  height: auto;
+  min-height: 100vh;
+  color: #fffffe;
+  background-color: #242629;
+}
+
+.Container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.Blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 248px);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.Header {
+  width: 100%;
+  padding: 24px 0;
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.HeaderLeft {
+}
+
+.HeaderRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.EditButton {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.CreateButton {
+  margin-left: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #7f5af0;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.Content {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.BlockWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.DeleteIcon {
+  font-size: 24px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 2;
+  cursor: pointer;
+  color: red;
+}
+
+.Block {
+  border: 4px solid #010101;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7f5af0;
+  }
+}
+
+.BlockLogo {
+  color: #fffffe;
+  width: 36px;
+  height: 36px;
+}
+
+.BlockName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Shaking {
+  animation: rotate 0.24s linear infinite;
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(-2deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+}
+
+.Overlayer {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.OverlayerContent {
+  box-sizing: border-box;
+  background-color: rgba(#000000);
+  margin-top: 200px;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.OverlayerTitle {
+  padding-bottom: 24px;
+}
+
+.Form {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 12px;
+}
+
+.FormItem {
+  margin-bottom: 24px;
+}
+
+.FormLabel {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.Input {
+  background-color: #16161a;
+  color: #fffffe;
+  font-size: 28px;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.Operations {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.Submit {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 2160px) {
+  .Blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Container {
+    max-width: 96%;
+  }
+}

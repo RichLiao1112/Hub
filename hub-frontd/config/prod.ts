@@ -3,6 +3,7 @@ import type { UserConfigExport } from "@tarojs/cli";
 export default {
   mini: {},
   h5: {
+    publicPath: "./",
     /**
      * WebpackChain 插件配置
      * @docs https://github.com/neutrinojs/webpack-chain
@@ -29,5 +30,5 @@ export default {
     //       postProcess: (context) => ({ ...context, outputPath: path.join(staticDir, 'index.html') })
     //     }))
     // }
-  }
-} satisfies UserConfigExport
+  },
+} satisfies UserConfigExport;
