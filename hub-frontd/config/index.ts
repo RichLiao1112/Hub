@@ -71,8 +71,7 @@ export default defineConfig(async (merge, { command, mode }) => {
       staticDirectory: 'static',
       publicPath: './',
       router: {
-        mode: 'browser',
-        basename: '/frontd',
+        mode: 'hash',
         customRoutes: {
           '/pages/index/index': '/index',
         }

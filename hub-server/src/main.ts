@@ -17,7 +17,7 @@ async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
   app.useStaticAssets({
     root: join(__dirname, '..', 'public'),
-    prefix: '/frontd/',
+    prefix: '/frontd',
   });
   app.setViewEngine({
     engine: {
