@@ -76,6 +76,9 @@ devDependencies:
   '@babel/core':
     specifier: ^7.8.0
     version: registry.npmmirror.com/@babel/core@7.8.0
+  '@linaria/shaker':
+    specifier: ^4.5.3
+    version: registry.npmmirror.com/@linaria/shaker@4.5.3
   '@pmmmwh/react-refresh-webpack-plugin':
     specifier: ^0.5.5
     version: registry.npmmirror.com/@pmmmwh/react-refresh-webpack-plugin@0.5.5(react-refresh@0.11.0)(webpack@5.78.0)
@@ -810,13 +813,13 @@ packages:
     name: '@babel/plugin-proposal-export-namespace-from'
     version: 7.18.9
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-export-namespace-from instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': registry.npmmirror.com/@babel/core@7.22.11
       '@babel/helper-plugin-utils': registry.npmmirror.com/@babel/helper-plugin-utils@7.22.5
       '@babel/plugin-syntax-export-namespace-from': registry.npmmirror.com/@babel/plugin-syntax-export-namespace-from@7.8.3(@babel/core@7.22.11)
-    dev: false
 
   registry.npmmirror.com/@babel/plugin-proposal-nullish-coalescing-operator@7.18.6(@babel/core@7.22.11):
     resolution: {integrity: sha512-wQxQzxYeJqHcfppzBDnm1yAY0jSRkUXR2z8RePZYrKwMKgMlE8+Z6LUno+bd6LvbGh8Gltvy74+9pIYkr+XkKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-proposal-nullish-coalescing-operator/-/plugin-proposal-nullish-coalescing-operator-7.18.6.tgz}
@@ -3992,7 +3995,6 @@ packages:
       picocolors: registry.npmmirror.com/picocolors@1.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   registry.npmmirror.com/@linaria/react@4.5.4(react@18.0.0):
     resolution: {integrity: sha512-/dhCVCsfdGPfQCPV0q5yy+DDlFXepvfXrw/os2fC+Xo1v9J/9gyiaBBWHzcumauvNNFj8aN6vRkj89fMujPHew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@linaria/react/-/react-4.5.4.tgz}
@@ -4033,7 +4035,6 @@ packages:
       ts-invariant: registry.npmmirror.com/ts-invariant@0.10.3
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   registry.npmmirror.com/@linaria/tags@4.5.4:
     resolution: {integrity: sha512-HPxLB6HlJWLi6o8+8lTLegOmDnbMbuzEE+zzunaPZEGSoIIYx8HAv5VbY/sG/zNyxDElk6laiAwEVWN8h5/zxg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@linaria/tags/-/tags-4.5.4.tgz}
@@ -4068,7 +4069,6 @@ packages:
       minimatch: registry.npmmirror.com/minimatch@9.0.3
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   registry.npmmirror.com/@linaria/webpack-loader@4.5.4(webpack@5.78.0):
     resolution: {integrity: sha512-lXZtcT6241imkx4wci/CvuGhBCgtprhgTgKGE5lOrAIpi8HPSLgDCabaZ4QsYs1IutbvstRVQ8BOVdXcRMkS0g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@linaria/webpack-loader/-/webpack-loader-4.5.4.tgz}
@@ -7385,7 +7385,6 @@ packages:
       '@babel/core': registry.npmmirror.com/@babel/core@7.22.11
       deepmerge: registry.npmmirror.com/deepmerge@2.2.1
       object.omit: registry.npmmirror.com/object.omit@3.0.0
-    dev: false
 
   registry.npmmirror.com/babel-plugin-dynamic-import-node@2.3.3:
     resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.3.tgz}
@@ -7557,7 +7556,6 @@ packages:
     resolution: {integrity: sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz}
     name: babel-plugin-transform-react-remove-prop-types
     version: 0.4.24
-    dev: false
 
   registry.npmmirror.com/babel-plugin-transform-taroapi@3.6.13:
     resolution: {integrity: sha512-wkYkVpFKMV7akuq2mC7jAw8JJYcOffk2DKYpWBtUMpXGqIBkfWn7OaXH7AcBto6fQo8CXj3+LFMyZtIpyH1Ykg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-3.6.13.tgz}
@@ -9499,7 +9497,6 @@ packages:
     name: deepmerge
     version: 2.2.1
     engines: {node: '>=0.10.0'}
-    dev: false
 
   registry.npmmirror.com/deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/deepmerge/-/deepmerge-4.3.1.tgz}
@@ -12565,7 +12562,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-plain-object: registry.npmmirror.com/is-plain-object@2.0.4
-    dev: false
 
   registry.npmmirror.com/is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-extglob/-/is-extglob-2.1.1.tgz}
@@ -15658,7 +15654,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extendable: registry.npmmirror.com/is-extendable@1.0.1
-    dev: false
 
   registry.npmmirror.com/obuf@1.1.2:
     resolution: {integrity: sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/obuf/-/obuf-1.1.2.tgz}
@@ -19174,7 +19169,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       tslib: registry.npmmirror.com/tslib@2.6.2
-    dev: false
 
   registry.npmmirror.com/ts-node@10.9.1(@swc/core@1.3.23)(@types/node@18.15.11)(typescript@5.1.3):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ts-node/-/ts-node-10.9.1.tgz}

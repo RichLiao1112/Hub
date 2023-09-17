@@ -14,6 +14,6 @@ WORKDIR /app
 RUN npm i -g pnpm && pnpm config set registry https://registry.npm.taobao.org
 COPY ./hub-server ./
 RUN pnpm i
-RUN mkdir public && pnpm run build
+RUN pnpm run build
 COPY --from=frontdBuilder /app/dist/* ./public/
 CMD ["npm", "run", "start:prod"]

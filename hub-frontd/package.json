@@ -61,6 +61,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@linaria/shaker": "^4.5.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@tarojs/cli": "3.6.13",
     "@tarojs/service": "^3.6.16",

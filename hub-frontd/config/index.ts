@@ -69,7 +69,7 @@ export default defineConfig(async (merge, { command, mode }) => {
     },
     h5: {
       staticDirectory: 'static',
-      publicPath: '/frontd',
+      publicPath: './',
       router: {
         mode: 'browser',
         basename: '/frontd',
